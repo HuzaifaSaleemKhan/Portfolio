@@ -1,0 +1,235 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-background.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.services li::before {
+  content: '\2022';
+  color: #000;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Work Section */
+.work {
+  background: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.work-entry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.work-name {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+  transition: 0.3s;
+}
+
+.work-name:hover {
+  padding: 15px;
+  font-size: 28px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.testimonials blockquote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 40px 0;
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info li {
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
+}
+
+.contact-info span {
+  background: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Footer Section */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Mobile styles here */
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .services h2 {
+    font-size: 20px;
+  }
+
+  .services li {
+    text-align: left;
+  }
+
+  .work-name {
+    font-size: 24px;
+  }
+
+  .testimonials blockquote {
+    font-size: 20px;
+  }
+}
